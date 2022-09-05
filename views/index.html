@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+</head>
+<body>
+    <h1>Directory listing for /</h1>
+    <hr>
+    <ul>
+        <li><a href="1.txt">1.txt</a></li>
+        <% for(var i = 0; i < files.length; i++) { %>
+            <% var file = files[i]; %>
+            <li><a href="<%= path %><%= file %>"><%= file %></a></li>
+        <% } %>
+    </ul>
+</body>
+</html>

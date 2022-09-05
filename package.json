@@ -1,5 +1,12 @@
 {
+  "name": "node-http-server",
+  "version": "0.0.1",
+  "engines": {
+    "node": "v14.19.0"
+  },
+  "private": true,
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "morgan": "^1.10.0"
   }
