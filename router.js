@@ -4,13 +4,12 @@ var express = require('express')
     
 var router = express.Router()
 
-base_url = 'G:\\video'
-
+var config = require("./config")
 
 //调用路由，进行页面渲染
 router.get('/*', function (req, res) {
   
-    var filepath = decodeURI(base_url + req.path.replace(/\//g, path.sep))
+    var filepath = decodeURI(config.BASE_URL + req.path.replace(/\//g, path.sep))
     fs.exists(filepath, (exists) => {
       if (exists) {
   
@@ -77,7 +76,7 @@ router.get('/*', function (req, res) {
             fs.readdir(filepath, function (err, files) {
               for (let i = 0; i < files.length; i++) {
                 var file = files[i]
-                var stat = fs.statSync(base_url + path.sep + decodeURI(req.path.replace(/\//g, path.sep)) + path.sep + file)
+                var stat = fs.statSync(config.BASE_URL + path.sep + decodeURI(req.path.replace(/\//g, path.sep)) + path.sep + file)
                 if (stat.isDirectory()) {
                   files[i] = file + '/'
                 }
