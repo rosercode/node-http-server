@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const config = require("./config")
 const yargs = require('yargs');
 
@@ -52,6 +54,6 @@ app.set('view engine', 'html');
 
 app.use(router)
 
-app.listen(config.PORT, () => {
-  console.log(`Example app listening on port ${config.PORT}`)
+app.listen(argv.port, () => {
+  console.log(`Example app listening on port ${argv.port}`)
 })
