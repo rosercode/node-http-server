@@ -6,9 +6,10 @@ Node HTTP Server is a simple HTTP server based on Node.js. It provides a lightwe
 
 ### Features
 
-- `node-http-server` can easily host static files on a local host, including HTML, CSS, JavaScript, images, videos (which can be played directly), and other common static resources.
-- The server supports outputting request logs in the console for debugging and monitoring.
-- The port number and hosting directory of the server can be changed by modifying the `app.js` file.
+- `node-http-server` can easily host static files on a local machine, including HTML, CSS, JavaScript, images, videos (which can be played directly), and other common static resources.
+- `node-http-server` implements video on-demand and playback starting from any position in the video by supporting HTTP Range Requests.
+- `node-http-server` supports logging request information to the console, making it easy to debug and monitor.
+- `node-http-server` allows changing the server's port number and the directory being hosted by modifying the `app.js` file.
 
 ## Installation
 

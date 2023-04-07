@@ -7,8 +7,9 @@ Node HTTP Server 是一个基于 Node.js 的简单 HTTP 服务器，它提供了
 ### 功能特性
 
 - `node-http-server` 可以轻松地在本地主机上托管静态文件，包括 HTML、CSS、JavaScript、图像、视频（可直接播放）和其他常见的静态资源。
-- 服务器支持在控制台中输出请求日志，方便调试和监视。
-- 可以通过修改 `app.js` 文件来更改服务器的端口号和托管目录。
+- `node-http-server`  通过支持 HTTP 范围请求（HTTP Range Requests）来实现视频点播和从视频的任意位置开始播放的功能
+- `node-http-server`支持在控制台中输出请求日志，方便调试和监视。
+- `node-http-server`可以通过修改 `app.js` 文件来更改服务器的端口号和托管目录。
 
 ## 安装
 
